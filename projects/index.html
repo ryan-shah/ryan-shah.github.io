@@ -22,7 +22,7 @@ title: All Projects
 			{% else %}
 		<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
 			{% endif %}	
-			<div class="card-header">{{ post.type }}</div>
+			<div class="card-header">{{ post.type | capitalize }}</div>
 			<div class="card-body">
 				<h4 class="card-title">{{ post.title }}</h4>
 				<p class="card-text">{{ post.summary }}</p>
