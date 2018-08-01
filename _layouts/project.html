@@ -1,8 +1,18 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-
-<div class="post">
-	{{ content }}
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="display-3">{{ page.title }}</h1>
+		<p> class="lead">{{ content }}</p>
+		<hr class="my-4">
+		<p class="lead">
+		{% if page.type == "school" %}
+		<a class="btn btn-primary btn-lg" href="{{ page.source }}" role="button">View Project</a>
+		{% elsif page.type == "personal" %}
+		<a class="btn btn-secondary btn-lg" href="{{ page.source }}" role="button">View Project</a>
+		{% else %}
+		<a class="btn btn-success btn-lg" href="{{ page.source }}" role="button">View Project</a>
+		{% endif %}
+	</div>
 </div>
