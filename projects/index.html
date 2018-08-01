@@ -27,6 +27,9 @@ title: All Projects
 				<h4 class="card-title">{{ post.title }}</h4>
 				<p class="card-text">{{ post.summary }}</p>
 			</div>
+			<div class="card-footer">
+				<small class="text-muted"><a href="{{ post.url }}">About</a><a href="{{ post.source }}">Source</a></small>
+			</div>
 		</div>
 		{% endfor %}
 	</div>
