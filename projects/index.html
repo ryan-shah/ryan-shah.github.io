@@ -28,7 +28,8 @@ title: All Projects
 				<p class="card-text">{{ post.summary }}</p>
 			</div>
 			<div class="card-footer">
-				<small class="text-muted"><a href="{{ post.url }}">About</a><a href="{{ post.source }}">Source</a></small>
+				<small class="text-muted"><a class="btn btn-sm" href="{{ post.url }}" 
+role="button">About</a><a class="btn btn-sm" href="{{ post.source }}" role="button">Source</a></small>
 			</div>
 		</div>
 		{% endfor %}
