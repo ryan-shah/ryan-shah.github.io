@@ -18,7 +18,7 @@ title: All Projects
 			{% if post.type == "school" %}
 		<div id="school" class="card text-white bg-primary mb-3" style="max-width: 20rem">
 			{% elsif post.type == "personal" %}
-		<div id="personal" class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+		<div id="personal" class="card text-white bg-info mb-3" style="max-width: 20rem;">
 			{% else %}
 		<div id="other" class="card text-white bg-success mb-3" style="max-width: 20rem;">
 			{% endif %}	
@@ -28,8 +28,7 @@ title: All Projects
 				<p class="card-text">{{ post.summary }}</p>
 			</div>
 			<div class="card-footer">
-				<small class="text-muted"><a class="btn btn-sm" href="{{ post.url }}" 
-role="button">About</a><a class="btn btn-sm" href="{{ post.source }}" role="button">Source</a></small>
+				<a class="btn btn-secondary btn-sm" href="{{ post.url }}" role="button">About</a><a class="btn btn-outline-secondary btn-sm" href="{{ post.source }}" role="button">Source</a>
 			</div>
 		</div>
 		{% endfor %}
