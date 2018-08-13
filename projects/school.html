@@ -8,6 +8,7 @@ title: School Projects
 	</div>
 </div>
 <div class="container">
+<div class="card-columns">
 	{% for post in site.posts %}
 		{% if post.type == "school" %}
 	<div class="card text-white bg-primary mb-3>
@@ -23,4 +24,5 @@ title: School Projects
 	<br>
 		{% endif %}
 	{% endfor %}
+</div>
 </div>
